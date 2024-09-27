@@ -12,9 +12,9 @@ It is a simple c++ program that measures the Typing Speed (WPM) and Accuracy of 
 
 ## Example Output
 --------------------------- RESULTS ---------------------------
--                                                        -
--           **Average Speed**             **Accuracy**   -
--             30.61 wpm                     33.33%       -
--           **Keystrokes**                **Errors**     -
--               2 chars                     2 mistakes   -
+                                                        
+           **Average Speed**             **Accuracy**   
+            30.61 wpm                     33.33%       
+          **Keystrokes**                **Errors**     
+            2 chars                     2 mistakes   
 ---------------------------------------------------------------
