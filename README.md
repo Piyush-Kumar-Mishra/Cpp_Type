@@ -2,7 +2,7 @@
 
 It is a simple c++ program that measures the Typing Speed (WPM) and Accuracy of the user.
 
-##Features
+## Features
 - **Real-Time Results**: Calculates WPM, keystrokes, accuracy, and error count.
 
 ## How to Run
