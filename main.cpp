@@ -31,11 +31,13 @@ void selectType(string &my_text) {
             cout << "Invalid!";
             exit(0);
         }
-    } else if (selected == "custom") {
+    }
+    else if (selected == "custom") {
         cout << "Enter your Custom Sentence (press enter): ";
         cin.ignore();
         getline(cin, my_text);
-    } else {
+    } 
+    else {
         cout << "Invalid!";
         exit(0);
     }
@@ -49,7 +51,8 @@ void output(const string &input, const string &my_text, double time) {
     for (size_t i = 0; i < total_char; i++) {
         if (i < input.length() && input[i] == my_text[i]) {
             matching_chars++;
-        } else {
+        } 
+        else {
             unmatched_chars++;
         }
     }
@@ -76,23 +79,16 @@ void output(const string &input, const string &my_text, double time) {
 
 int main() {
     string my_text;
-
     selectType(my_text);
     cout<<endl;
     cout << "-----------------------------Enter The Text-------------------------------" << endl;
     cout << "Type: " << my_text << endl;
-
-    // Start timing right after displaying the text
     auto start_time = chrono::high_resolution_clock::now();
-
     string input;
-    getline(cin, input);  // Directly read the input after the prompt.
-
+    getline(cin, input); 
     auto end_time = chrono::high_resolution_clock::now();
     chrono::duration<double> time = end_time - start_time;
-
     output(input, my_text, time.count());
-
     cout<<"---------------------------------------------------------------------------";
     return 0;
 }
